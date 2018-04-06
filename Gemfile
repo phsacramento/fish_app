@@ -21,6 +21,7 @@ group :development, :test do
   gem 'pry-meta'
   gem 'pry-doc'
   gem 'annotate'
+  gem 'faker'
 end
 
 group :development do
@@ -31,8 +32,8 @@ group :development do
 end
 
 group :test do
-  gem 'shoulda-matchers', '~> 2.8.0', require: false
-  gem 'factory_girl_rails', '~> 4.5.0'
+  gem 'shoulda-matchers', require: false
+  gem 'factory_bot_rails'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
