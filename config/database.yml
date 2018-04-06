@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: fish_app_development
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  host: localhost
+  port: 5432
+  template: template0
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: fish_app_test
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  min_messages: WARNING
+  host: localhost
+  port: 5432
+  template: template0
